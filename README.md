@@ -19,3 +19,36 @@ CTI-IP Scanner is a Python tool designed for analyzing IP addresses using the Vi
   
   ```bash
   python cti_ip.py --help
+  ``` 
+You will be prompted to enter the IP address you wish to scan.
+
+## List IP Scan
+To scan a list of IP addresses from a file (ip_list.txt), use the following command:
+  ```bash
+  Do you want to scan a single IP or a list of IPs? (single/list): list
+  ``` 
+## Notes
+- ** Example:** Provide specific examples for both single IP and list IP scans to guide users effectively.
+- ** Customization:** Highlight the --help flag usage to encourage users to explore additional features and options.
+## Requirements
+Python 3.x
+requests library for HTTP requests
+colorama library for colored terminal output
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+## Installation
+- **Clone the repository:**
+
+```bash
+git clone https://github.com/YahyaElOurdighi/CTI-IP-Scanner.git
+cd CTI-IP-Scanner
+```
+
+- **Install dependencies:**
+
+```bash
+pip install -r requirements.txt
+```
+Ensure you have Python 3.x and pip installed on your system.
