@@ -56,3 +56,7 @@ Ensure you have Python 3.x and pip installed on your system.
 ## API Keys and Configuration
 Obtain a **VirusTotal API** key from VirusTotal.
 Store your API keys in a file named **api_keys.txt**, each key on a new line.
+
+## Screenshots
+
+![CTI-IP Scanner](https://i.ibb.co/j6yGtgy/cti.png](https://gcdnb.pbrd.co/images/ElI24ydzl0vg.png?o=1)
