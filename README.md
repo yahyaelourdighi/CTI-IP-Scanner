@@ -28,8 +28,8 @@ To scan a list of IP addresses from a file (ip_list.txt), use the following comm
   Do you want to scan a single IP or a list of IPs? (single/list): list
   ``` 
 ## Notes
-- ** Example:** Provide specific examples for both single IP and list IP scans to guide users effectively.
-- ** Customization:** Highlight the --help flag usage to encourage users to explore additional features and options.
+- **Example:** Provide specific examples for both single IP and list IP scans to guide users effectively.
+- **Customization:** Highlight the --help flag usage to encourage users to explore additional features and options.
 ## Requirements
 Python 3.x
 requests library for HTTP requests
