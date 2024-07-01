@@ -60,3 +60,4 @@ Store your API keys in a file named **api_keys.txt**, each key on a new line.
 ## Screenshots
 
 ![CTI-IP Scanner](https://gcdnb.pbrd.co/images/ElI24ydzl0vg.png?o=1)
+![CTI-IP Scanner](https://gcdnb.pbrd.co/images/kEN9dxJZTviy.png?o=1)
