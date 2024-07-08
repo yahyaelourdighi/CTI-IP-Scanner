@@ -8,13 +8,11 @@ from datetime import datetime
 import os
 from collections import Counter
 
-# Initialize colorama
 init(autoreset=True)
 
 URL = 'https://www.virustotal.com/api/v3/ip_addresses/'
 API_KEY_FILE = 'api_keys.txt'
 
-# Color definitions
 COLORS = {
     'malicious': Fore.RED,
     'clean': Fore.GREEN,
@@ -29,7 +27,7 @@ def check_ip_virustotal(ip, api_key, fast_scan=True):
     headers = get_headers(api_key)
     response = requests.get(URL + ip, headers=headers)
     try:
-        response.raise_for_status()  # Raises an HTTPError for bad responses
+        response.raise_for_status()
         return response.json(), None
     except requests.exceptions.HTTPError as http_err:
         error_msg = f'{Fore.RED}HTTP error occurred: {http_err}'
@@ -62,7 +60,6 @@ def analyze_ip_data(ip, data, description_mode='simple'):
             elif 'clean' in result['result']:
                 organized_results['clean'].append((vendor, result['result']))
 
-        # Prepare response based on description_mode
         if description_mode == 'simple':
             response = f"{ip} | "
             if organized_results['malicious']:
@@ -74,13 +71,11 @@ def analyze_ip_data(ip, data, description_mode='simple'):
         elif description_mode == 'full':
             response = f"{ip} - Detailed Vendor Analysis:\n"
 
-            # Add malicious results
             if organized_results['malicious']:
                 response += f"{Fore.RED}Malicious:\n"
                 for vendor, result in organized_results['malicious']:
                     response += f"    - {vendor}: {result}\n"
 
-            # Add clean results
             if organized_results['clean']:
                 response += f"{Fore.CYAN}Clean:\n"
                 for vendor, result in organized_results['clean']:
@@ -247,7 +242,7 @@ def main():
                         clean_count += 1
                     if country:
                         country_counter[country] += 1
-                time.sleep(15)  # Add delay to prevent rate limit issues
+                time.sleep(15)
 
         total_count = len(ip_list)
         print_dashboard(malicious_count, clean_count, total_count, country_counter)
