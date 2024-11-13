@@ -1,8 +1,8 @@
 # CTI-IP Scanner
 
-CTI-IP Scanner is a Python tool designed for analyzing IP addresses using the VirusTotal API. It provides detailed insights into each IP's reputation based on reports from multiple antivirus engines and other security sources.
+![cti_ip](https://github.com/user-attachments/assets/055d32b5-ee37-4bd3-bcb9-ed94ff2a05a3)
 
-![CTI-IP Scanner](https://i.ibb.co/j6yGtgy/cti.png)
+CTI-IP Scanner is a Python tool designed for analyzing IP addresses using the VirusTotal API. It provides detailed insights into each IP's reputation based on reports from multiple antivirus engines and other security sources.
 
 ## Features
 
